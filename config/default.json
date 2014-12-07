@@ -1,0 +1,14 @@
+{
+  "notifyUrl": "http://localhost:8080/hubot/notify",
+  "deliveryToRoom": {
+    "^general@": "#general"
+  },
+  "logger": {
+    "name": "hubot-maildelivery",
+    "streams": [{
+      "level": "debug",
+      "path": "/var/log/hubot-maildelivery.log"
+    }]
+  }
+}
+

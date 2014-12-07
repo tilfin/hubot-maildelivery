@@ -1,0 +1,17 @@
+{
+  "name": "hubot-maildelivery",
+  "version": "0.1.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Toshimitsu Takahashi",
+  "license": "MIT",
+  "dependencies": {
+    "bunyan": "^1.2.3",
+    "config": "^1.8.1",
+    "mailparser": "^0.4.6",
+    "request": "^2.49.0"
+  }
+}
