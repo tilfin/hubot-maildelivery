@@ -13,7 +13,7 @@ $ sudo git clone https://github.com/tilfin/hubot-maildelivery.git
 $ sudo useradd -b /user/local/hubot-maildelivery -s /bin/false hubotmail
 $ sudo chown -R hubotmail:hubotmail hubot-maildelivery
 $ cd hubot-maildelivery
-$ sudo -u hubotmail npm install
+$ sudo -u hubotmail -H npm install
 ```
 
 Deploy receiver script
