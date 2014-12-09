@@ -2,7 +2,8 @@
   "notifyUrl": "http://localhost:8080/hubot/notify",
   "deliveryToRoom": {
     "^all@": "#all",
-    "^admin@": { "id": "admin.room@example.com", "mention": "@all" }
+    "^admin@": { "id": "admin.room@example.com", "mention": "@all" },
+    "^sns@": { "id": "#alert", "mention": "@group" }
   },
   "logger": {
     "name": "hubot-maildelivery",

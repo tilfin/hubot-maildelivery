@@ -3,6 +3,7 @@
  */
 var MailParser = require('mailparser').MailParser,
     request = require('request'),
+    htmlToText = require('html-to-text'),
     config = require('config'),
     roomModel = require("./room"),
     logger = require("./logger")();
@@ -18,7 +19,13 @@ module.exports = function(callback){
 
     logger.debug(mail);
 
-    if (!mail.text || !mail.headers) {
+    var text = mail.text;
+    if (!text && mail.html) {
+      text = htmlToText.fromString(mail.html);
+      console.log(text)
+    }
+
+    if (!text || !mail.headers) {
       var err = new Error("cancelled unexpected mail format");
       logger.error(err);
       callback(err);
@@ -37,7 +44,7 @@ module.exports = function(callback){
     if (room.mention) {
       msg = room.mention + " ";
     }
-    msg += mail.subject + "\n" + mail.text;
+    msg += mail.subject + "\n" + text;
 
     var data = {
       from   : mail.headers.from,
