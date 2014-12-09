@@ -1,7 +1,9 @@
 hubot-maildelivery
 ==================
 
-mail delivery to room message by hubot
+[![Build Status](https://travis-ci.org/tilfin/hubot-maildelivery.svg?branch=master)](https://travis-ci.org/tilfin/hubot-maildelivery)
+
+mail delivery to room as message by hubot
 
 
 Install
