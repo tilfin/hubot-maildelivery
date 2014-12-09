@@ -3,7 +3,7 @@
  */
 
 process.env.NODE_CONFIG_DIR = __dirname + '/config';
-process.env.NODE_ENV = 'test1';
+process.env.NODE_ENV = 'test2';
 
 var fs = require('fs');
 var assert = require('assert');
@@ -36,6 +36,21 @@ describe('processor', function(){
                     }).reply(200, "OK");
 
       fs.createReadStream(__dirname + '/mail/cron.mail').pipe(processor(done));
+    })
+  });
+
+  describe('piped valid html only mail', function(){
+    it("sends notification", function(done){
+      var scope = nock('http://localhost:8080')
+                   .post('/hubot/notify', {
+                      from: 'example <no-reply@sns.example.com>',
+                      room: "#alert",
+                      message: "@group Notification - Subscription Confirmation\n"
+                       + 'You have chosen to subscribe to the topic:\nConfirm subscription [https://foo.example.com/confirmation.html]'
+                       + '\n\nPlease do not reply directly to this e-mail.'
+                    }).reply(200, "OK");
+
+      fs.createReadStream(__dirname + '/mail/html.mail').pipe(processor(done));
     })
   });
 

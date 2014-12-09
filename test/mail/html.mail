@@ -1,0 +1,23 @@
+From 0000014a2fb44ee-b416-12102c73fc51-000000@example.com  Wed Dec 10 00:35:30 2014
+Return-Path: <00ffdc5-389d-44ee-b416-12102c73fc51-000000@example.com>
+X-Original-To: sns@example.info
+Delivered-To: sns@example.info
+Received: from smtp-out.example.com (smtp-out.example.com [10.10.14.7])
+        by mail.example.info (Postfix) with ESMTP id 6BC3D160D79
+        for <sample@example.info>; Wed, 10 Dec 2014 00:35:30 +0900 (JST)
+Date: Tue, 9 Dec 2014 15:35:28 +0000
+From: example <no-reply@sns.example.com>
+To: sample@example.info
+Message-ID: <0000014a2fb0df3b-af5ffdc5-389d-44ee-b416-12102c73fc51-000000@email.example.com>
+Subject: Notification - Subscription Confirmation
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+ <body>
+  <p>You have chosen to subscribe to the topic:
+  <br /><a href="https://foo.example.com/confirmation.html">Confirm subscription</a></p>
+  <p><small>Please do not reply directly to this e-mail.</small></p>
+ </body>
+</html>
