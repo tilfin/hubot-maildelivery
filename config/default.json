@@ -1,7 +1,11 @@
 {
   "notifyUrl": "http://localhost:8080/hubot/notify",
   "deliveryToRoom": {
-    "^general@": "#general"
+    "^general@": "#general",
+    "^slack-channel@": "#slackchannel",
+    "^hipchat-room@" : "DDDDD_XXXXXX_XXXXX@conf.hipchat.com",
+    "^secret@": { "id": "#secret", "mention": "@group" },
+    "^admin@": { "id": "EEEEEE_XXXXXX_XXXXX@conf.hipchat.com", "mention": "@all" }
   },
   "logger": {
     "name": "hubot-maildelivery",
@@ -11,4 +15,3 @@
     }]
   }
 }
-

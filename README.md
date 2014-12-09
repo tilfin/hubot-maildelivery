@@ -97,8 +97,11 @@ Configuration
 {
   "notifyUrl": "http://localhost:8080/hubot/notify",
   "deliveryToRoom": {
-    "^general@": "#slackchannel",
-    "^server@" : "DDDDD_XXXXXX_XXXXX@conf.hipchat.com",
+    "^general@": "#general",
+    "^slack-channel@": "#slackchannel",
+    "^hipchat-room@" : "DDDDD_XXXXXX_XXXXX@conf.hipchat.com",
+    "^secret@": { "id": "#secret", "mention": "@group" },
+    "^admin@": { "id": "EEEEEE_XXXXXX_XXXXX@conf.hipchat.com", "mention": "@all" }
   },
   "logger": {
     "name": "hubot-maildelivery",
@@ -112,6 +115,7 @@ Configuration
 
 _notifyUrl_ is post destination of hubot.
 _deliveryToRoom_ is mapping room by To:, for example slack channel, hipchat room.
+If you want to add the mention, change the value as an object with _id_ and _mention_.
 See [bunyan](https://github.com/trentm/node-bunyan) about _logger_.
 
 ### Prepare default log file
