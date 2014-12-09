@@ -1,0 +1,30 @@
+From root@example.com  Tue Dec  9 11:37:02 2014
+Return-Path: <root@example.com>
+X-Original-To: unknown@example.info
+Delivered-To: unknown@example.info
+Received: from bar.example.ne.jp (bar.example.ne.jp [10.210.100.100])
+        by mail.example.info (Postfix) with ESMTP id A41B1160D79
+        for <temp@example.info>; Tue,  9 Dec 2014 11:37:02 +0900 (JST)
+Received: from foo.example.com (host.example.ne.jp [10.242.100.50])
+        by www16397uf.example.ne.jp (Postfix) with SMTP id 74EC93E02AC
+        for <temp@example.info>; Tue,  9 Dec 2014 11:37:01 +0900 (JST)
+Received: by foo.example.com (sSMTP sendmail emulation); Tue, 09 Dec 2014 11:37:01 +0900
+From: "root" <root@example.com>
+Date: Tue, 09 Dec 2014 11:37:01 +0900
+To: temp@example.info
+Subject: Cron <root@host> env
+Content-Type: text/plain; charset=ANSI_X3.4-1968
+X-Cron-Env: <MAILTO=temp@example.info>
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <HOME=/root>
+X-Cron-Env: <PATH=/usr/bin:/bin>
+X-Cron-Env: <LOGNAME=root>
+
+LANGUAGE=ja_JP:ja
+HOME=/root
+MAILTO=temp@example.info
+LOGNAME=root
+PATH=/usr/bin:/bin
+LANG=ja_JP.UTF-8
+SHELL=/bin/sh
+PWD=/root

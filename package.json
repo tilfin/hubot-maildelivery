@@ -4,14 +4,19 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/*.test.js"
   },
   "author": "Toshimitsu Takahashi",
   "license": "MIT",
   "dependencies": {
     "bunyan": "^1.2.3",
     "config": "^1.8.1",
+    "iconv": "^2.1.4",
     "mailparser": "^0.4.6",
     "request": "^2.49.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.0.1",
+    "nock": "^0.51.0"
   }
 }

@@ -1,0 +1,46 @@
+From someone@example.com  Tue Dec  9 12:08:46 2014
+Return-Path: <someone@example.com>
+X-Original-To: admin@example.info
+Delivered-To: admin@example.info
+Received: from mail-la0-f46.google.com (mail.google.com [10.0.0.46])
+	by mail.example.info (Postfix) with ESMTP id 6DA46160D79
+	for <temp@example.info>; Tue,  9 Dec 2014 12:08:46 +0900 (JST)
+Received: by mailgoogle.com with SMTP id q1so5043939lam.19
+        for <temp@example.info>; Mon, 08 Dec 2014 19:08:44 -0800 (PST)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:date:message-id:subject:from:to
+         :content-type;
+        bh=ksmRhr0xoz/eYNN5lSVkyPL0JOgU5pshdgqCp8Urlr0=;
+        b=JqBaSYmPspEw3JV0te8GFdumxvSFhxEkg7LDvSqnLLng3JL+qLcr+v3iTMbv34kGjL
+         cX4HKuwEzq0watxeKDRxKmGlIKuZPm25w8HPAPLKiSAaxubVlKDOmW3TH0M/p8s5GaTq
+         kCOWWA/+69J/rt88q1WAJzhJ7tGn7AVh0hczt0wPEnxfuBPRy36lr3DoAfAX5lfRUfU5
+         LEf964M5iJSugUPAofL9wK7a45yfMORApJ7Qgy6Lz1Hs85fHUZxT9gpIYum6gpeoKP19
+         NBgPLH5mWvw2rlh5CvIbProC6wa0fjZdl12DfLkQze9OiniaRMrhaKcu1f3M/OHEJJ7b
+         TwLA==
+X-Gm-Message-State: ALoCoQnkqWP6DM0U6q3Ry4FxkBWKgCltFONeLifC3ew+x+QtP7bkKfsUXZv/FSpuCnipK53KOA9r
+MIME-Version: 1.0
+X-Received: by 10.112.61.169 with SMTP id q9mr19469980lbr.12.1418094524678;
+ Mon, 08 Dec 2014 19:08:44 -0800 (PST)
+Received: by 10.112.204.129 with HTTP; Mon, 8 Dec 2014 19:08:44 -0800 (PST)
+Date: Tue, 9 Dec 2014 12:08:44 +0900
+Message-ID: <CANsiN375d5-36i6u8WswMHLQQOiRJvYZm3xAxRrd7ZXKq1MJpg@mail.gmail.com>
+Subject: =?ISO-2022-JP?B?GyRCJUYlOSVIJWEhPCVrGyhC?=
+From: Some One <someone@example.com>
+To: admin@example.info
+Content-Type: multipart/alternative; boundary=001a11c3b96c66dc340509bfdced
+
+--001a11c3b96c66dc340509bfdced
+Content-Type: text/plain; charset=ISO-2022-JP
+Content-Transfer-Encoding: 7bit
+
+ユニットテスト用の
+メールを送信する。
+
+--001a11c3b96c66dc340509bfdced
+Content-Type: text/html; charset=ISO-2022-JP
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr"><span style="font-size:14px">ユニットテスト用の</span><div style="font-size:14px">メールを送信する。</div></div>
+
+--001a11c3b96c66dc340509bfdced--

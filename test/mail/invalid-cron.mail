@@ -1,0 +1,22 @@
+From root@example.com  Tue Dec  9 11:37:02 2014
+X-Original-XXXtemp@example.info
+Delivered-To: temp@example.info
+Receivxxxxfrom bar.example.ne.jp (bar.example.ne.jp [10.210.100.100])
+        by mail.example.info (Postfix) with ESMTP id A41B1160D79
+        for <temp@example.info>; Tue,  9 Dec 2014 11:37:02 +0900 (JST)
+Received: from foo.exa.com (host.example.ne.jp [10.242.100.50])
+        by www16397uf.example.ne.jp (Postfix) with SMTP id 74EC93E02AC
+        for <temp@example.
+Received: by foo.example.com (sSMTP sendmail emulation); Tue, 09 Dec 2014 11:37:01 +0900
+From"root" <root@example.c
+Date: Tue, 09 Dec 2014 11:37:01 +0900
+To: temp@example.info
+Subject: Cron <root@host> env
+Content-Type: text/plain; charset=ANSI_X3.4-1968
+HOME=/root
+MAILTO=temp@example.info
+LZXZZZZZZZZZZZZZoot
+/bin:/bin
+LANG=ja_JP.UTF-8
+SHELL=/bin/sh
+PWD=/root

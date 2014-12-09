@@ -99,10 +99,10 @@ Configuration
     "^server@" : "DDDDD_XXXXXX_XXXXX@conf.hipchat.com",
   },
   "logger": {
-    "name": "hubot-mail-delivery",
+    "name": "hubot-maildelivery",
     "streams": [{
       "level": "debug",
-      "path": "/var/log/send-hubot.log"
+      "path": "/var/log/hubot-maildelivery.log"
     }]
   }
 }
