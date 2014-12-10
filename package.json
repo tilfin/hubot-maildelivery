@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "mail delivery to room as message by hubot",
   "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tilfin/hubot-maildelivery.git"
+  },
   "scripts": {
     "test": "mocha test/*.test.js"
   },
